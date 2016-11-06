@@ -17,4 +17,13 @@ Commands map
 | 4       | BEEP    | Makes a beep                             |
 | 5       | STORE   | Stores the contetent of register 0 to the address denoted by the next byte |
 | 6       | PRINT   | Print the data from the address |
+| 7 | CLEAR0 | |
+| 8 | CLEAR1 | |
+| 9 | JUMPTO | |
+| 10 | JUMPEQUAL | |
+| 11 | COPY0 | |
+| 12 | COPY1 | |
+| 13 | CLEAR | |
+| 14 | MULTIPLY | |
 
+underflow/overflow will not be dealt with

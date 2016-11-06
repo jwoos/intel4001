@@ -35,7 +35,6 @@ int main() {
 		printf("\n");
 
 		char* input;
-		char* temp;
 		size_t inputSize;
 
 		if (!(option == 'x' || option == 'X')) {
@@ -43,29 +42,29 @@ int main() {
 				case '1':
 					printf("Loading default machine code\n");
 					// load value 1
-					memoryWrite(memory, 1, 1);
 					memoryWrite(memory, 2, 1);
+					memoryWrite(memory, 3, 2);
 
 					// load value 2
-					memoryWrite(memory, 3, 2);
 					memoryWrite(memory, 4, 2);
+					memoryWrite(memory, 5, 2);
 
 					// add
-					memoryWrite(memory, 5, 3);
+					memoryWrite(memory, 6, 3);
 
 					// store to 12
-					memoryWrite(memory, 6, 5);
-					memoryWrite(memory, 7, 12);
+					memoryWrite(memory, 7, 5);
+					memoryWrite(memory, 8, 12);
 
 					// print from 12
-					memoryWrite(memory, 8, 6);
-					memoryWrite(memory, 9, 12);
+					memoryWrite(memory, 9, 6);
+					memoryWrite(memory, 10, 12);
 
 					// beep
-					memoryWrite(memory, 10, 4);
+					memoryWrite(memory, 11, 4);
 
-					// half
-					memoryWrite(memory, 11, 0);
+					// halt
+					memoryWrite(memory, 12, 0);
 					break;
 
 				case '2':
@@ -153,7 +152,7 @@ int main() {
 				case 'r':
 				case 'R':
 					printf("Initializing cpu\n");
-					CPU* cpu = cpuInitialize(memory);
+					CPU* cpu = cpuInitialize(memory, true);
 
 					printf("Starting...\n");
 					cpuRun(cpu);
