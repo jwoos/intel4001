@@ -19,7 +19,6 @@ CPU* cpuInitialize(Memory* memory) {
 }
 
 void cpuFree(CPU* cpu) {
-	memoryFree(cpu -> memory);
 	free(cpu);
 }
 
