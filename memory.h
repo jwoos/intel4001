@@ -2,6 +2,7 @@
 #define CPU_4004_MEMORY
 
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef unsigned char byte;
 
@@ -19,5 +20,9 @@ byte memoryRead(Memory*, byte);
 void memoryWrite(Memory*, byte, byte);
 
 void memoryFree(Memory*);
+
+void memorySave(Memory*, char*);
+
+void memoryLoad(Memory*, char*);
 
 #endif
