@@ -12,7 +12,6 @@ CPU* cpuInitialize(Memory* memory, bool shouldDebug) {
 	cpu -> register0 = 0;
 	cpu -> register1 = 0;
 	cpu -> overflowError = false;
-	cpu -> overflowError = false;
 	cpu -> signedMode = false;
 	cpu -> halt = false;
 	cpu -> debugMode = shouldDebug;
