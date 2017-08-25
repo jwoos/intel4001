@@ -1,5 +1,5 @@
-#ifndef CPU_4004_CPU
-#define CPU_4004_CPU
+#ifndef CPU_4001_CPU
+#define CPU_4001_CPU
 
 #include <stdlib.h>
 #include <stdio.h>

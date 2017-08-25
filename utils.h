@@ -1,5 +1,5 @@
-#ifndef EMULATE_UTILS_H
-#define EMULATE_UTILS_H
+#ifndef CPU_4001_UTILS
+#define CPU_4001_UTILS
 
 #include <stdio.h>
 #include <stdlib.h>

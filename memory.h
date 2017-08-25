@@ -1,5 +1,5 @@
-#ifndef CPU_4004_MEMORY
-#define CPU_4004_MEMORY
+#ifndef CPU_4001_MEMORY
+#define CPU_4001_MEMORY
 
 #include <stdlib.h>
 #include <stdio.h>
