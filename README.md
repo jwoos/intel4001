@@ -7,6 +7,12 @@ This was built to learn a little about CPU emulation following a guide:
 3. https://megalomaniacbore.blogspot.co.uk/2014/04/loadsave-virtual-cpu-memory-state.html
 4. https://megalomaniacbore.blogspot.co.uk/p/virtual-cpu-house-keeping-following.html
 
+## Build
+Just run `make` - simple.
+
+## Run
+`./4001` will bring up an interactive session with the various things you can do!
+
 ## Commands map
 
 | op code | command   | explanation                                                                |
